@@ -1,0 +1,43 @@
+.clients-container {
+	margin-top: 30px;
+	text-align: center;
+}
+
+/*.clients-container-2 {
+    -webkit-columns: 50% 2; /* Chrome, Safari, Opera */
+    /*-moz-columns: 50% 2; /* Firefox */
+    /*columns: 50% 2;
+}*/
+
+.clients-container-2 {
+    height: 50%; /*your fixed height*/
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+       -moz-column-count: 2; /* Firefox */
+            column-count: 2; /*3 in those rules is just placeholder -- can be anything*/
+}
+
+.clients-container-2>ul {
+	line-height: 220%;
+}
+
+.clients-container-2>li {
+    display: inline-block;
+}
+
+.more-clients {
+	margin: 30px; 
+}
+
+.more-clients>h2 {
+	margin-bottom: 20px;
+}
+
+.clients-images {
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.panel-footer {
+	text-align: center;
+	font-weight: bold;
+}

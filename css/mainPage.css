@@ -1,0 +1,76 @@
+.navbar, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color:#333;
+	background-color:#333;
+	height: 70px;
+	line-height: 70px;
+	padding-top: 0;
+}
+
+.navbar-header .navbar-brand, .navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
+}
+
+#logotype {
+	height: 64px;
+	width: 147px;
+}
+
+#mainpage-picture {
+	background-color: #0B4C5F;
+	width: 1140px;
+	height: 350px;
+	margin-top: 50px;
+	margin-bottom: 90px;
+}
+
+#qualities-icons {
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.quality-icon {
+	width: 128px;
+	height: 128px;
+	vertical-align: middle;
+}
+
+#quality-icon-1 {
+	margin-right: 17%;
+	display: inline-block;
+}
+
+#quality-icon-2 {
+	display: inline-block;
+}
+
+#quality-icon-3 {
+	margin-left: 17%;
+	display: inline-block;
+}
+
+.icons-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	border-color:#4F4E4E;
+	background-color:#4F4E4E;
+	height: 120px;
+	line-height: 15px;
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 3%;
+}
+
+.rights-reserved {
+	font-weight: bold;
+	color: #FFFFFF;
+	display: inline-block;
+	vertical-align: middle;
+}
