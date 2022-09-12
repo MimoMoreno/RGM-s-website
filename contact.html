@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- TODO: ver si lo dejo aca o lo elimino <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -14,84 +13,107 @@
 	<title>Contacto</title>
 </head>
 
-<body>
+<body class="bkg-style" background="images/background/page_background.png">
 
-	<!-- **********************NAVIGATION BAR********************** -->
-	<div class="static-top-bar">
-		<!-- TODO: ver de cambiar a 'navbar-static-top' para que la barra acompañe al scrollear -->
-		<nav class="navbar navbar-inverse default navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					</button>
-					<!-- <a class="navbar-brand" href="#">RGM Proyectos Integrales</a> -->
-					<!-- TODO: cambiar a pagina de inicio -->
-					<a href="./mainPage.html">
-						<img id="logotype" src="./images/logo/candara-crop2.png" alt="RGM">
-					</a>
+	<div class="wrapper">
+
+		<!-- **********************NAVIGATION BAR********************** -->
+		<div class="static-top-bar">
+			<nav class="navbar navbar-inverse default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						</button>
+						<a href="./index.html">
+							<img id="logotype" src="./images/logo/official_logo_white.png" alt="RGM Proyectos Integrales">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse categories">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="./index.html">INICIO</a></li>
+							<li><a href="./whoAreWe.html">¿QUIÉNES SOMOS?</a></li>
+							<li><a href="./services.html">SERVICIOS</a></li>
+							<li><a href="./clients.html">CLIENTES</a></li>
+							<li><a href="./projects.html">OBRAS REALIZADAS</a></li>
+							<li class="active"><a href="#">CONTACTO</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
 				</div>
-				<div class="collapse navbar-collapse categories">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="./mainPage.html">INICIO</a></li>
-						<li><a href="./whoAreWe.html">¿QUIÉNES SOMOS?</a></li>
-						<li><a href="./services.html">SERVICIOS</a></li>
-						<li><a href="./clients.html">CLIENTES</a></li>
-						<li><a href="./projects.html">OBRAS REALIZADAS</a></li>
-						<li class="active"><a href="#">CONTACTO</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div>
-		</nav>
-	</div>
-	<!-- **********************NAVIGATION BAR********************** -->
+			</nav>
+		</div>
+		<!-- **********************NAVIGATION BAR********************** -->
 
-	<div class="container">
-		<h1>Contacto</h1>
+		<div class="container general-container">
+			<h1>Contacto</h1>
 
-		<div class="information-container">
-			<div id="map-container" class="col-md-6"></div>
-			<div class="col-md-6 description">
-				<p>Uruguay 252, Capital Federal</p>
-				<p>4375 5710</p>
-				<p>rgm@gmail.com</p>
+			<div class="information-container">
+				<div id="map-container" class="col-md-6"></div>
+				<div class="col-md-6 description">
+					<div class="row description-information">
+						<div class="col-md-2">
+							<span class="glyphicon glyphicon-map-marker glyphicon-contact thumbnail-info" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-10">
+							<p>Uruguay 252 1º8, CP 1268, CABA, Arg.</p>
+						</div>
+					</div>
+					<div class="row description-information">
+						<div class="col-md-2">
+							<span class="glyphicon glyphicon-earphone glyphicon-contact thumbnail-info" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-10">
+							<p>(011) 4375 5710</p>
+						</div>
+					</div>
+					<div class="row description-information">
+						<div class="col-md-2">
+							<span class="glyphicon glyphicon-envelope glyphicon-contact thumbnail-info" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-10">
+							<p>contacto@rgmproyectos.com.ar</p>
+						</div>
+					</div>
+				</div>
 			</div>
+
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+			<script>	
+
+				function init_map() {
+					var var_location = new google.maps.LatLng(-34.605890, -58.386255);
+
+					var var_mapoptions = {
+						center: var_location,
+						zoom: 14
+					};
+
+					var var_marker = new google.maps.Marker({
+						position: var_location,
+						map: var_map,
+						title:"Uruguay 252"});
+
+					var var_map = new google.maps.Map(document.getElementById("map-container"),
+						var_mapoptions);
+
+					var_marker.setMap(var_map);	
+
+				}
+
+				google.maps.event.addDomListener(window, 'load', init_map);
+
+			</script>
 		</div>
 
-
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<script>	
-
-			function init_map() {
-				var var_location = new google.maps.LatLng(-34.605890, -58.386255);
-
-				var var_mapoptions = {
-					center: var_location,
-					zoom: 14
-				};
-
-				var var_marker = new google.maps.Marker({
-					position: var_location,
-					map: var_map,
-					title:"Uruguay 252"});
-
-				var var_map = new google.maps.Map(document.getElementById("map-container"),
-					var_mapoptions);
-
-				var_marker.setMap(var_map);	
-
-			}
-
-			google.maps.event.addDomListener(window, 'load', init_map);
-
-		</script>
+		<div class="push"></div>
 	</div>
-
+	
 	<!-- **********************FOOTER********************** -->
 	<div class="footer">
 		<div class="row">
-		<p><span class="rights-reserved">&reg; RGM Proyectos Integrales.</span></p>
-		<p><span class="rights-reserved">Todos los derechos reservados.</span></p>
+			<p><span class="rights-reserved">Uruguay 252 1º8, CABA &nbsp; | &nbsp; (011) 4375-5710 &nbsp; | &nbsp; contacto@rgmproyectos.com.ar</span></p>
+			<p><span class="rights-reserved">&reg; RGM Proyectos Integrales.</span></p>
+			<p><span class="rights-reserved">Todos los derechos reservados.</span></p>
 		</div>
 	</div>
 	<!-- **********************FOOTER********************** -->

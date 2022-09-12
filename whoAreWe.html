@@ -5,8 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- TODO: ver si lo dejo aca o lo elimino <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
-
+	
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/mainPage.css">
@@ -14,60 +13,62 @@
 	<title>¿Quiénes somos?</title>
 </head>
 
-<body>
+<body class="bkg-style" background="images/background/page_background.png">
 
-	<!-- **********************NAVIGATION BAR********************** -->
-	<div class="static-top-bar">
-		<!-- TODO: ver de cambiar a 'navbar-static-top' para que la barra acompañe al scrollear -->
-		<nav class="navbar navbar-inverse default navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					</button>
-					<!-- <a class="navbar-brand" href="#">RGM Proyectos Integrales</a> -->
-					<!-- TODO: cambiar a pagina de inicio -->
-					<a href="./mainPage.html">
-						<img id="logotype" src="./images/logo/candara-crop2.png" alt="RGM">
-					</a>
+	<div class="wrapper">
+
+		<!-- **********************NAVIGATION BAR********************** -->
+		<div class="static-top-bar">
+			<nav class="navbar navbar-inverse default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						</button>
+						<a href="./index.html">
+							<img id="logotype" src="./images/logo/official_logo_white.png" alt="RGM Proyectos Integrales">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse categories">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="./index.html">INICIO</a></li>
+							<li class="active"><a href="#">¿QUIÉNES SOMOS?</a></li>
+							<li><a href="./services.html">SERVICIOS</a></li>
+							<li><a href="./clients.html">CLIENTES</a></li>
+							<li><a href="./projects.html">OBRAS REALIZADAS</a></li>
+							<li><a href="./contact.html">CONTACTO</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
 				</div>
-				<div class="collapse navbar-collapse categories">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="./mainPage.html">INICIO</a></li>
-						<li class="active"><a href="#">¿QUIÉNES SOMOS?</a></li>
-						<li><a href="./services.html">SERVICIOS</a></li>
-						<li><a href="./clients.html">CLIENTES</a></li>
-						<li><a href="./projects.html">OBRAS REALIZADAS</a></li>
-						<li><a href="./contact.html">CONTACTO</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div>
-		</nav>
-	</div>
-	<!-- **********************NAVIGATION BAR********************** -->
-
-	<div class="container">
-		<h1>¿Quiénes somos?</h1>
-		<div class="description">
-			<p> 
-				RGM es una empresa dedicada a proyectos, ejecución y mantenimiento de instalaciones eléctricas, electrónicas y de aire acondicionados, conformada por un grupo de personas de amplia y reconocida calidad profesional. <img src="./images/quienes_somos.jpg" id="page-picture">Cuenta también con un departamento dedicado a la intervención en el área del espectáculo público; tanto en instalaciones fijas como a la producción de electricidad escenográfica (Set Electric) en producciones de primera línea.
-			</p>
-			<p>
-				Partimos desde el diseño hata la obra realizada, cubriendo todas las etapas de este proceso, comprometidos con la excelencia en los resultados.
-			</p>
-			<p>
-				Ofrecemos servicios altamente competitivos, diseñando y realizando instalaciones eléctricas seguras para las personas y los equipamientos, garantizando de esta forma un servicio de alta gama.
-			</p>
-			<p>
-				Efectuamos proyectos, cálculo y dirección de obras con refrigeración y calefacción por aire acondicionado central.
-			</p>
+			</nav>
 		</div>
-	</div>
+		<!-- **********************NAVIGATION BAR********************** -->
 
+		<div class="container general-container">
+			<h1>¿Quiénes somos?</h1>
+			<div class="description">
+				<p> 
+					RGM es una empresa dedicada a proyectos, ejecución y mantenimiento de instalaciones eléctricas, electrónicas y de aire acondicionados, conformada por un grupo de personas de amplia y reconocida calidad profesional. <!--<img src="./images/quienes_somos.jpg" id="page-picture">-->Cuenta también con un departamento dedicado a la intervención en el área del espectáculo público; tanto en instalaciones fijas como a la producción de electricidad escenográfica (Set Electric) en producciones de primera línea.
+				</p>
+				<p>
+					Partimos desde el diseño hata la obra realizada, cubriendo todas las etapas de este proceso, comprometidos con la excelencia en los resultados.
+				</p>
+				<p>
+					Ofrecemos servicios altamente competitivos, diseñando y realizando instalaciones eléctricas seguras para las personas y los equipamientos, garantizando de esta forma un servicio de alta gama.
+				</p>
+				<p>
+					Efectuamos proyectos, cálculo y dirección de obras con refrigeración y calefacción por aire acondicionado central.
+				</p>
+			</div>
+		</div>
+		
+		<div class="push"></div>
+	</div>
 	<!-- **********************FOOTER********************** -->
 	<div class="footer">
 		<div class="row">
-		<p><span class="rights-reserved">&reg; RGM Proyectos Integrales.</span></p>
-		<p><span class="rights-reserved">Todos los derechos reservados.</span></p>
+			<p><span class="rights-reserved">Uruguay 252 1º8, CABA &nbsp; | &nbsp; (011) 4375-5710 &nbsp; | &nbsp; contacto@rgmproyectos.com.ar</span></p>
+			<p><span class="rights-reserved">&reg; RGM Proyectos Integrales.</span></p>
+			<p><span class="rights-reserved">Todos los derechos reservados.</span></p>
 		</div>
 	</div>
 	<!-- **********************FOOTER********************** -->

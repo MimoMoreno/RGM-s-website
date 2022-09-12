@@ -56,6 +56,36 @@
     color: #FFFFFF;
 }
 
+.footer.my-footer {
+    height: inherit;
+}
+
+.footer.my-footer > .container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+span.glyphicon.glyphicon-footer {
+    font-size: 3em;
+    margin-top: 0.5em;
+}
+
+.thumbnail-footer {
+    width: 160px;
+    height: 200px;
+    background-color: rgba(25, 24, 24, 0.8);
+    border-color: #2f2f2f;
+    border-radius: 0.5em;
+}
+
+.thumbnail-info {
+    color: #CCCCCC;
+}
+
+.div-center-align {
+    /*    display: inline-block;*/
+    margin: auto;
+}
 /*.dropdown-menu {
     border-top-color: #333;
 }*/

@@ -3,12 +3,6 @@
 	text-align: center;
 }
 
-/*.clients-container-2 {
-    -webkit-columns: 50% 2; /* Chrome, Safari, Opera */
-    /*-moz-columns: 50% 2; /* Firefox */
-    /*columns: 50% 2;
-}*/
-
 .clients-container-2 {
     height: 50%; /*your fixed height*/
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -33,11 +27,16 @@
 }
 
 .clients-images {
-	display: inline-block;
-	margin-bottom: 30px;
+    display: inline-block;
+    margin-bottom: 30px;
+    border-color: rgba(25, 24, 24, 0.6);
+    background-color: rgba(25, 24, 24, 0.6);
 }
 
 .panel-footer {
-	text-align: center;
-	font-weight: bold;
+    text-align: center;
+    /* font-weight: bold; */
+    /* color: #000; */
+    border-color: rgba(25, 24, 24, 0.6);
+    background-color: rgba(25, 24, 24, 0.6);
 }
