@@ -2,60 +2,806 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- TODO: ver si lo dejo aca o lo elimino <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/mainPage.css">
-	<title>Obras realizadas</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <title>Obras realizadas</title>
 </head>
 
-<body>
+<body class="bkg-style" background="images/background/page_background.png">
 
-	<!-- **********************NAVIGATION BAR********************** -->
-	<div class="static-top-bar">
-		<!-- TODO: ver de cambiar a 'navbar-static-top' para que la barra acompañe al scrollear -->
-		<nav class="navbar navbar-inverse default navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					</button>
-					<!-- <a class="navbar-brand" href="#">RGM Proyectos Integrales</a> -->
-					<!-- TODO: cambiar a pagina de inicio -->
-					<a href="./mainPage.html">
-						<img id="logotype" src="./images/logo/candara-crop2.png" alt="RGM">
-					</a>
-				</div>
-				<div class="collapse navbar-collapse categories">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="./mainPage.html">INICIO</a></li>
-						<li><a href="./whoAreWe.html">¿QUIÉNES SOMOS?</a></li>
-						<li><a href="./services.html">SERVICIOS</a></li>
-						<li><a href="./clients.html">CLIENTES</a></li>
-						<li class="active"><a href="#">OBRAS REALIZADOS</a></li>
-						<li><a href="./contact.html">CONTACTO</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div>
-		</nav>
-	</div>
-	<!-- **********************NAVIGATION BAR********************** -->
+    <div class="wrapper">
 
-	<div class="container">
-		<h1>Obras realizadas</h1>
-	</div>
+        <!-- **********************NAVIGATION BAR********************** -->
+        <div class="static-top-bar">
+            <nav class="navbar navbar-inverse default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        </button>
+                        <a href="./index.html">
+                            <img id="logotype" src="./images/logo/official_logo_white.png" alt="RGM Proyectos Integrales">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse categories">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./index.html">INICIO</a></li>
+                            <li><a href="./whoAreWe.html">¿QUIÉNES SOMOS?</a></li>
+                            <li><a href="./services.html">SERVICIOS</a></li>
+                            <li><a href="./clients.html">CLIENTES</a></li>
+                            <li class="active"><a href="#">OBRAS REALIZADAS</a></li>
+                            <li><a href="./contact.html">CONTACTO</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+        <!-- **********************NAVIGATION BAR********************** -->
 
-	<!-- **********************FOOTER********************** -->
-	<div class="footer">
-		<div class="row">
-		<p><span class="rights-reserved">&reg; RGM Proyectos Integrales.</span></p>
-		<p><span class="rights-reserved">Todos los derechos reservados.</span></p>
-		</div>
-	</div>
-	<!-- **********************FOOTER********************** -->
+        <div class="container general-container">
+            <h1>Obras realizadas</h1>
+            <div class="projects-container">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Teatros</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body projects-panel-body">
+                                <div>
+                                    <h3 class="project-year"><b>2022</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Teatro Nacional Cervantes</b>, Libertad 815,
+                                                Capital Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Reparación del compresor carrier de la sala María Guerrero.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2018-2020</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Teatro El Nacional</b>, Av. Corrientes 960,
+                                                Capital Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Puesta en valor y mantenimiento del sistema de aire acondicionado central.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2015/16</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Teatro Coliseo</b>, Marcelo T. de Alvear 1125, Capital
+                                                Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Puesta en valor de los tableros de escenotécnia y servicios generales.
+                                                Survey de la instalación eléctrica de todo el teatro.
+                                                Instalación eléctrica y de datos para la marquesina de led.
+                                                Instalación eléctrica y de datos de los motores de movimiento escénico.
+                                            </p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <p><b class="project-place">Teatro Nacional Cervantes</b>, Av. Córdoba 1155, Capital
+                                                Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Survey de la instalación eléctrica de todo el teatro.
+                                            </p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <p><b class="project-place">Asociación Patriótica y Cultural Española</b>, Bernardo
+                                                de Yrigoyen 672, Capital Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Restauración y puesta en valor de la instalación eléctrica del edificio cuya
+                                                antigüedad es de 100 años.
+                                                Renovación de su instalación lumínica con tecnología LED
+                                                Proyecto del sistema de climatización del salón central y oficinas.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2012</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Teatro El Picadero</b>, Pasaje Santos Discépolo 1870,
+                                                Capital Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Proyecto y ejecución instalación eléctrica edilicia y escénica del teatro y el
+                                                restaurante en planta baja.
+                                                Proyecto y ejecución del sistema de detección de incendios del teatro y
+                                                restaurante en planta baja.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2011</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Teatro Nacional Cervantes</b>, Av. Córdoba 1155, Capital
+                                                Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Obras de saneamiento, recableado y puesta en valor de las instalaciones
+                                                eléctricas escénicas.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2010</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Teatro del Bar Notable
+                                                Café de los Angelitos
+                                            </b>, Av. Rivadavia 2100, Capital Federal</p>
+                                            <p class="project-description">
+                                                Ejecución, puesta en funcionamiento e instalación eléctrica escénica, dimmers,
+                                                efectos especiales.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2005</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Tango Porteño</b>, Cerrito 570, Capital Federal</p>
+                                            <p class="project-description">
+                                                Proyecto e instalación del sistema de iluminación de la sala de espectáculos.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2004</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">CIE Presenta S:A</b>, Freire 932, Capital Federal</p>
+                                            <p class="project-description">
+                                                Desarrollo, fabricación e instalación de telón de fibra óptica con iluminación
+                                                automatizada para el musical Peter Pan.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">Teatro Opera</b>, Av. Corrientes 860, Capital Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Desarrollo, fabricación, instalación y puesta en marcha del sistema CUE LIGHT
+                                                del teatro, para el Musical Aladdin.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">Teatro Regina</b>, Av. Santa Fe 1235, Capital Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Proyecto, construcción e instalación de la estructura de la marquesina y del
+                                                sistema de iluminación.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">Rojo Tango</b>, Marta Salotti 445, Capital Federal</p>
+                                            <p class="project-description">
+                                                Instalación eléctrica de la caja escénica.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">Tango Porteño</b>, Cerrito 570, Capital Federal</p>
+                                            <p class="project-description">
+                                                Proyecto e instalación del sistema de iluminación de la sala de espectáculos.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2002</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Teatro El Nacional</b>, Av. Corrientes 950, Capital
+                                                Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Proyecto, fabricación e instalación del sistema de iluminación de la marquesina.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Realizaciones de set
+                                    electric
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body projects-panel-body">
+                                <ul>
+                                    <li>“La Tiendita del Horror”, Teatro Brodway</li>
+                                    <li>“Solo Tango The Show”, Teatro Lola Membrives</li>
+                                    <li>“Aladdin”, Teatro Opera</li>
+                                    <li>“Cabaret”, Teatro Astral</li>
+                                    <li>“Peter Pan”, Teatro Opera</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Dirección dpto.
+                                    eléctrico e iluminación
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body projects-panel-body">
+                                <div>
+                                    <h3 class="project-year"><b>2017/18</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Sta. Maria S.A.I.F. (PROA)</b></p>
+                                            <p class="project-description">
+                                                Instalación eléctrica de iluminación artística en la fachada, utilizando protocolo DALI.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2011</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p class="project-description">“La Novicia Rebelde”, Teatro Opera Citi</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2010</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p class="project-description">“Chicago”, Teatro Lola Membrives</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2010</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p class="project-description">“La Bella y La Bestia”, Teatro Opera Citi</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2009</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p class="project-description">“El Fantasma de la Opera”, Teatro Opera</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2000</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p class="project-description">“Chicago”, Teatro Opera</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>1999</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p class="project-description">“Los Miserables”, Teatro Opera</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>1998</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p class="project-description">“La Bella y la Bestia”, Teatro Opera</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Oficinas</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body projects-panel-body">
+                                <div>
+                                    <h3 class="project-year"><b>2020</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Adcap Securities Argentina S.A.</b></p>
+                                            <p class="project-description">
+                                                Puesta en valor de la instalación eléctrica. Instalación del cableado estructurado. Puesta en valor del sistema de climatización.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2019</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Meridional Seguros</b></p>
+                                            <p class="project-description">
+                                                Proyecto y renovación de sistema de HVAC (central). Proyecto e instalación 
+                                                de sistema VRF. Adecuación a la norma de COVID-19 del gobierno de la Ciudad 
+                                                de Buenos Aires. Los proyectos se realizaron en nuevas oficinas de 3000 m2 totales. 
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2019</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Redbee S.A.</b></p>
+                                            <p class="project-description">
+                                                Reparación y puesta en valor del sistema de climatización.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2018/19/20</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">La Maquinita CoWorking</b></p>
+                                            <p class="project-description">
+                                                Puesta en valor y mantenimiento del sistema de aire acondicionado central.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">Meridional Seguros</b></p>
+                                            <p class="project-description">
+                                                Instalación de equipos split y reparación de equipos centrales.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">OLA S.A.</b></p>
+                                            <p class="project-description">
+                                                Instalación eléctrica y cableado estructurado.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2018/19</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Transatlántica S.A.</b></p>
+                                            <p class="project-description">
+                                                Renovación de instalación eléctrica y de la red de cableado estructurado.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2017/18</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Fuego RED</b></p>
+                                            <p class="project-description">
+                                                Instalación de sistema de detección de incendios inalámbrico (Notifier).
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">OSPLAD</b></p>
+                                            <p class="project-description">
+                                                Instalación y reparación de sistemas de climatización.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2017 y 2019</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">BATTI Construcciones S.R.L.</b></p>
+                                            <p class="project-description">
+                                                Instalación eléctrica, cableado estructurado, CCTV, sistema de control de acceso y sistema de control de incendios.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2017/18</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Multifinanzas</b></p>
+                                            <p class="project-description">
+                                                Renovación de instalación eléctrica y de la red de cableado estructurado.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2015/16</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Deloitte & CO S.A.</b>, Av. Caseros 3563, Capital Federal</p>
+                                            <p class="project-description">
+                                                Obra Nueva. Proyecto e instalación del sistema Eléctrico, lumínico, red de
+                                                datos, telefonía y control de acceso.
+                                                Instalación del sistema de aire acondicionado.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2008/10</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Deloitte & CO S.A.</b>, Florida 234, Capital Federal</p>
+                                            <p class="project-description">
+                                                Instalación del sistema de control de acceso y CCTV Pisos 5º y 6º.
+                                                Instalación eléctrica, lumínica e instalación del sistema de detección de
+                                                incendio en la sala de servidores.
+                                                Proyecto e instalación del sistema eléctrico, lumínico, telefonía, red de datos
+                                                y control de acceso en la ampliación del 4º piso.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">Deloitte & CO S.A.</b>, Maipú 272, Capital Federal</p>
+                                            <p class="project-description">
+                                                Proyecto e instalación del sistema eléctrico, lumínico, red de datos y telefonía
+                                                de los 7 pisos que conforman el edificio.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">SG Pellegrino y CIA SRL</b>, Carlos Pellegrini 125, Capital Federal</p>
+                                            <p class="project-description">
+                                                Armado de tableros eléctricos y de protección de incendios.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2007</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Litvak, Daneri & Asociados</b>, San Martín 427, Capital
+                                                Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Proyecto e instalación del sistema eléctrico y lumínico.
+                                                Instalación de música funcional.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2006</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">O.S.P.I.V</b>, Tucumán 737, Capital Federal</p>
+                                            <p class="project-description">
+                                                Proyecto e instalación del sistema eléctrico, telefónico y de datos.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2003</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Biscardi & Asociados</b>, Av. Corrientes 330, Capital Federal
+                                            </p>
+                                            <p class="project-description">
+                                                Proyecto e instalación del sistema eléctrico, datos y telefonía.
+                                                Instalación sistema de detección de datos.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Inmuebles educativos</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body projects-panel-body">
+                                <div>
+                                    <h3 class="project-year"><b>2014</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Jardín de Infantes del G.C.A.B.A. en el Club DAOM
+                                                Distrito Escolar 19
+                                            </b>, Varela 1802, Capital Federal</p>
+                                            <p class="project-description">
+                                                Obra Civil: Construcción de nuevos baños, aulas y salón comedor. Instalación de
+                                                estufas de tiro balanceado y ventiladores industriales.
+                                                Obra eléctrica: Renovación y ampliación de toda la instalación eléctrica.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2010</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Escuela Rio Pipo</b>, Ushuaia, Tierra del Fuego</p>
+                                            <p class="project-description">
+                                                Proyecto y dirección de instalación eléctrica, del sistema de telefonía y
+                                                detección de incendio.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">Jardín de Infantes los Alakalufe</b>, Tolhuin, Tierra del Fuego</p>
+                                            <p class="project-description">
+                                                Proyecto y dirección de instalación eléctrica, del sistema de telefonía y
+                                                detección de incendio.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b class="project-place">Escuela Rio Pipo</b>, Ushuaia, Tierra del Fuego</p>
+                                            <p class="project-description">
+                                                Proyecto y dirección de instalación eléctrica, del sistema de telefonía y
+                                                detección de incendio.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2007</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Escuela Nº 14 Distrito Escolar 13</b>, San Pedrito 5845, Capital Federal</p>
+                                            <p class="project-description">
+                                                Instalación del sistema de calefacción por aire.
+                                                Instalación del sistema eléctrico y de gas.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Inmuebles comerciales</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body projects-panel-body">
+                                <div>
+                                    <h3 class="project-year"><b>2017</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Asociación Patriótica y Cultural de España</b>, Bernardo de Irigoyen 672, Capital Federal</p>
+                                            <p class="project-description">
+                                                Puesta en valor de toda la instalación eléctrica. Proyecto e instalación de iluminación 
+                                                con tecnología LED. Comando de iluminación de salón con sistema dimmers usando protocolo DMX.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2001</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Locos por el Fútbol – Bar Temático</b>, Aeroparque Jorge Newbery</p>
+                                            <p class="project-description">
+                                                Instalación del sistema de audio y video en escenario para espectáculos en vivo.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Viviendas</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse">
+                            <div class="panel-body projects-panel-body">
+                                <div>
+                                    <h3 class="project-year"><b>2018/19</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p>Consorcio de Propietarios Madero Plaza</p>
+                                            <p class="project-description">
+                                                Proyecto para uso racional de la energía eléctrica del edificio. Instalación y 
+                                                reparación de equipos de aire acondicionado.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2010</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p>Pinzón 1497, Capital Federal</p>
+                                            <p class="project-description">
+                                                Restauración total de la unidad. Instalación eléctrica, red de telefonía y TV.
+                                                Instalación de equipos individuales de aire acondicionado.
+                                                Tendido de nueva montante y P.A.T.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2008</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p>Somellera 970, Adrogué, Pcia. de Buenos Aires</p>
+                                            <p class="project-description">
+                                                Ampliación de vivienda, Instalación del sistema eléctrico, red telefonía y TV.
+                                                Iluminación del parque y automatización del portón y sistema de riego.
+                                                Instalación aire acondicionado central.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>Jorge Newbery 956, Luis Guillón, Pcia. de Buenos Aires</p>
+                                            <p class="project-description">
+                                                Instalación del sistema eléctrico, red telefonía y TV. Iluminación del parque y automatización del portón.
+                                                Instalación de sistema de alarmas y portero visor.
+                                                Instalación de equipos individuales de aire acondicionado.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2006</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p>Gaspar Campos 2392, Muñiz, Pcia. de Buenos Aires</p>
+                                            <p class="project-description">
+                                                Instalación eléctrica, red telefonía y TV.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2004</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p>Calle Espora 413, Adrogué, Pcia. de Buenos Aires</p>
+                                            <p class="project-description">
+                                                Obra nueva: instalación de sistema eléctrico, red telefónica y de TV.
+                                                Automatización de portón y riego.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Varios</a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse">
+                            <div class="panel-body projects-panel-body">
+                                <div>
+                                    <h3 class="project-year"><b>2019</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">SE Etiquetas Parque Industrial Cañuelas</b></p>
+                                            <p class="project-description">
+                                                Instalación eléctrica de maquinarias de planta, iluminación y oficinas.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2018</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Iglesia Santa Catalina de Siena (Arq. G. Barro)</b>, San Martín 705, Capital Federal</p>
+                                            <p class="project-description">
+                                                Relevamiento de toda la instalación eléctrica. Anteproyecto de la nueva instalación 
+                                                eléctrica y de la iluminación interna de la fachada usando tecnología LED.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <h3 class="project-year"><b>2017</b></h3>
+                                    <ul>
+                                        <li>
+                                            <p><b class="project-place">Casal de Cataluñas</b>, Chacabuco 863, Capital Federal</p>
+                                            <p class="project-description">
+                                                Migración del sistema de iluminación a sistema LED del foyer.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="push"></div>
+    </div>
+    
+    <!-- **********************FOOTER********************** -->
+    <div class="footer">
+        <div class="row">
+            <p><span class="rights-reserved">Uruguay 252 1º8, CABA &nbsp; | &nbsp; (011) 4375-5710 &nbsp; | &nbsp; contacto@rgmproyectos.com.ar</span></p>
+            <p><span class="rights-reserved">&reg; RGM Proyectos Integrales.</span></p>
+            <p><span class="rights-reserved">Todos los derechos reservados.</span></p>
+        </div>
+    </div>
+    <!-- **********************FOOTER********************** -->
 
 
     <!-- Bootstrap core JavaScript
